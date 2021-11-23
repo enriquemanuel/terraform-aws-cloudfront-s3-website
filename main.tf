@@ -1,8 +1,3 @@
-provider "aws" {
-  region = "us-east-1"
-  alias  = "aws_cloudfront"
-}
-
 locals {
   default_certs = var.use_default_domain ? ["default"] : []
   acm_certs     = var.use_default_domain ? [] : ["acm"]

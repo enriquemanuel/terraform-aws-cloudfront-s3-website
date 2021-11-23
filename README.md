@@ -20,7 +20,7 @@ Prerequisites (Optional in example2):
     }
 
     module "cloudfront_s3_website_with_domain" {
-        source                 = "chgangaraju/cloudfront-s3-website/aws"
+        source                 = "enriquemanuel.scalr.io/env-tp22m4rk1ci4a0o/cloudfront-s3-website/aws"
         version                = "1.2.2"
         hosted_zone            = "example.com" 
         domain_name            = "test.abc.example.com"
@@ -31,7 +31,7 @@ Prerequisites (Optional in example2):
 ### Example 2
 
     module "cloudfront_s3_website_without_domain" {
-        source                 = "chgangaraju/cloudfront-s3-website/aws"
+        source                 = "enriquemanuel.scalr.io/env-tp22m4rk1ci4a0o/cloudfront-s3-website/aws"
         version                = "1.2.2"
         domain_name            = "test-application-1232" // Any random identifier for s3 bucket name
         use_default_domain     = true
